@@ -4,6 +4,11 @@ body
     margin-right: 0px;
     margin-left: 0px;
 }
+.restaurant 
+{
+    display: inline-block;
+    text-decoration: none;
+}
 #container
 {
     max-width: 1440px ;
@@ -117,11 +122,13 @@ body
 }
 .num
 {
+    position: relative;
+    left:10px;
     background-color: #9356dc;
     padding: 3px 6px 3px 6px;
     border-radius: 30px;
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
 }
 .iconeFonc
 {
@@ -159,7 +166,7 @@ body
 }
 .restaurant h3, p
 {
-    margin-top: 1px;
+    margin-top: 10px;
     margin-bottom: 10px;
     padding-left: 10px;
     text-decoration: none;
@@ -194,7 +201,7 @@ body
     align-items: center;
     padding-left: 10px;
 }
-.logo1
+.logo1 
 {
     font-family: 'Shrikhand', sans-serif;
     display: flex;
