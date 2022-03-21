@@ -125,6 +125,11 @@ a
     border: transparent;
     border-radius: 20px;
 }
+.choix: hover
+{
+    background-color: #9356dc;
+    color: #f6f6f6;
+}
 .num
 {
     position: relative;
@@ -199,6 +204,11 @@ a
     background-color: #353535ff;
     color: #ffffff;
 }
+.texteFin a
+{
+    text-decoration: none;
+    color: #ffffff;
+}
 .iconeFoot
 {
     display: flex;
@@ -245,6 +255,7 @@ a
 }
 .palette h2
 {
+    font-family: 'Shrikhand', sans-serif;
     padding-right: 50px;
     font-size: 25px;
 }
