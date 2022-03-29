@@ -221,6 +221,12 @@ a
     padding-left: 10px;
     text-decoration: none;
 }
+.men h3, p
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 .texte
 {
     display: flex;
