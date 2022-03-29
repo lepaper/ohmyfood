@@ -123,7 +123,8 @@ a
     display:flex;
     margin-top: 25px;
     margin: auto;
-    background-color: #9356DC;
+    /*background-color: #dc98d9;*/
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
     color: #ffffff;
     border-radius: 30px;
     line-height: 40px;
@@ -172,8 +173,10 @@ a
 }
 .choix:hover
 {
-    background-color: #F5A9F2;
-    color: #f6f6f6;
+    background-color: #fceafb;
+    box-shadow: 0px 0px 8px #fceafb;
+    transition: 500ms;
+    /*color: #f6f6f6;*/
 }
 .num
 {
