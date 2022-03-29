@@ -306,7 +306,7 @@ a
 .palette h2
 {
     font-family: 'Shrikhand', sans-serif;
-    padding-right: 50px;
+    padding-right: 90px;
     font-size: 25px;
 }
 
@@ -387,7 +387,7 @@ a
 .ligne_verte1
 {
     width: 40px;
-    margin-left: 10px;
+    margin-left: 15px;
     border-bottom: 4px solid #99E2D0;
     margin-bottom: 15px;
     margin-top: 15px;
