@@ -1,0 +1,166 @@
+.aside2
+{
+    position: relative;  
+    margin-top: -40px;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    border: 1 solid black;
+    border-radius: 30px 30px 0 0;
+    background-color: #f6f6f6;
+}
+.repas
+{
+    animation:repas linear 2s;
+    animation-duration: 1.3s;
+}
+@keyframes repas
+{
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.palette
+{
+    display: flex;
+    justify-content: center;
+    padding: 2px 2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: center;
+    width: 100%;
+}
+.palette h2
+{
+    font-family: 'Shrikhand', sans-serif;
+    padding-right: 90px;
+    font-size: 25px;
+}
+.menu
+{
+    width: 95%;
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.ent
+{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    height: 75px;
+    border-radius: 20px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;  
+}
+.prix h3
+{
+  margin-top: 30px;
+  margin-right: 20px;
+  /*box-sizing: border-box;*/
+}
+
+@keyframes slide
+{    
+  from {
+    margin-left: 5%;
+    width: 0%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 15%;
+  }
+}
+@keyframes slidereturn
+{    
+  from {
+    margin-left: 0%;
+    width: 15%;
+  }
+
+  to {
+    margin-left: 5%;
+    width: 0%;
+  }
+}
+.ent:hover .check
+{
+  display: block;
+  animation: slide 700ms ease-in-out forwards;
+  transform: scaleX(100%);
+  transition: 800ms ;  
+}
+.ent .check 
+{
+  display: block;
+  animation: slidereturn 700ms ease-in-out forwards;
+  transform: scaleX(100%);
+  transition: 800ms ;  
+}
+.check
+{
+  display: none;
+  text-align: center;
+  height: 100%;
+  background-color: #99E2D0;
+}
+@keyframes rotate 
+{
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.check i
+{
+  display: block;  
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+.ent:hover .check i
+{
+    animation: rotate 700ms 1 both;  
+}
+.men
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.men p, h3
+{
+    white-space: nowrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ligne_verte1
+{
+    width: 40px;
+    margin-left: 15px;
+    border-bottom: 4px solid #99E2D0;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    font-size: large;
+    font-weight: 300;
+}

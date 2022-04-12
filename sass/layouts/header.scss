@@ -1,0 +1,62 @@
+.Explorer
+{
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 14px;
+}
+.Fonctionnement h2
+{
+    padding-left: 25px;
+}
+.aside1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 95%;
+}
+.fonc 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.choix
+{
+    box-shadow: 3px 3px 3px #ecececff;
+    display: flex;
+    justify-content: flex-start;
+    padding: 2px 2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    align-items: center;
+    width: 100%;
+    background: #f6f6f6ff;
+    border: transparent;
+    border-radius: 20px;
+}
+.choix:hover
+{
+    background-color: #fceafb;
+    box-shadow: 0px 0px 8px #fceafb;
+    transition: 500ms;  
+}
+.num
+{
+    position: relative;
+    left:10px;
+    background-color: #9356dc;
+    padding: 3px 6px 3px 6px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 14px;
+}
+.iconeFonc
+{
+    padding: 0 25px 0 25px;
+    font-size: 20px;
+    color: #7e7e7eff;
+}

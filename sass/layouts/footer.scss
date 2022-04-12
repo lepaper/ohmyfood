@@ -1,0 +1,30 @@
+.texteFin
+{
+    position: relative;
+    /*bottom: 30px;*/
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: #353535ff;
+    color: #ffffff;
+}
+.texteFin a
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+.iconeFoot
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+}
+.logo1 
+{
+    font-family: 'Shrikhand', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    color: #ffffff;
+}

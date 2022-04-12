@@ -1,4 +1,6 @@
 .button1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: auto;
   background-color: #FF79DA;
@@ -11,17 +13,19 @@
 .heart1 svg {
   overflow: visible;
 }
+
 .heart1 path {
   stroke: black;
   stroke-width: 2px;
   stroke-opacity: 1;
   fill: url(#gradient1);
   fill-opacity: 0;
+  -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
+
 .heart1 path:hover {
   stroke-opacity: 0;
   fill-opacity: 1;
 }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
