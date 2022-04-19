@@ -7,16 +7,19 @@ $mint: #FF79DA;
     background: linear-gradient(to bottom right, #FF79DA, #9356DC);
     color: #ffffff;
     border-radius: 30px;
-    box-shadow: 0px 0px 6px #9c9c9c;
+    /*box-shadow: 0px 0px 6px #9c9c9c;*/
     line-height: 40px;
     border: none;
-    cursor: pointer;
+   /* cursor: pointer;*/
     transform: scale(1); 
     transition: 800ms;
 }
 .button1:hover
 {
     transform: scale(1.10);
+    filter: brightness(1.1);
+    box-shadow: 3px 3px 3px #979797;
+    cursor: pointer;
 }
 .btn
 {

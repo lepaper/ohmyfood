@@ -1,17 +1,4 @@
 @charset "UTF-8";
-@media screen and (max-width: 768px) {
-  .Découvrir {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /*.texteFin
-  {
-      display: flex;
-      justify-content:
-  }*/
-}
 body {
   font-family: "Roboto", sans-serif;
   margin-right: 0px;
@@ -30,16 +17,19 @@ a {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: #ffffff;
   border-radius: 30px;
-  box-shadow: 0px 0px 6px #9c9c9c;
+  /*box-shadow: 0px 0px 6px #9c9c9c;*/
   line-height: 40px;
   border: none;
-  cursor: pointer;
+  /* cursor: pointer;*/
   transform: scale(1);
   transition: 800ms;
 }
 
 .button1:hover {
   transform: scale(1.1);
+  filter: brightness(1.1);
+  box-shadow: 3px 3px 3px #979797;
+  cursor: pointer;
 }
 
 .btn {
@@ -114,20 +104,53 @@ a {
     transform: rotate(360deg);
   }
 }
+.section2 {
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+.section3 {
+  background-color: #f6f6f6ff;
+  padding-top: 30px;
+}
+
 .Resto h2 {
   padding-left: 25px;
 }
 
+.restaurants {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
+  padding-bottom: 50px;
+}
+
 .restaurant {
-  width: 85%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin: auto;
+  right: 450px;
   margin-bottom: 20px;
   border: 0 solid #ffffff;
   background-color: #ffffff;
   border-radius: 20px 20px 20px 20px;
   box-shadow: 0 5px 10px 3px #deebff;
+}
+
+.nouveau {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  color: #10392f;
+  background-color: #99E2D0;
+  padding: 5px;
+}
+
+.bloc {
+  position: relative;
 }
 
 .restaurant1 {
@@ -149,12 +172,14 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding-right: 10px;
 }
 
 .image1 {
   border-radius: 15px 15px 0 0;
   padding-bottom: 10px;
-  height: 160px;
+  height: 200px;
+  width: 500px;
   object-fit: cover;
 }
 
@@ -177,18 +202,26 @@ a {
   background-color: #f6f6f6;
 }
 
+.Repas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .repas {
-  animation: repas linear 2s;
-  animation-duration: 1.3s;
+  animation: repas 3s forwards;
+  /*opacity: 0;*/
 }
 
 @keyframes repas {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px);
   }
   100% {
     opacity: 1;
+    transform: translateY(0px);
   }
 }
 .palette {
@@ -214,6 +247,35 @@ a {
   align-items: center;
   justify-content: center;
   margin: auto;
+  animation: repas 3s forwards;
+}
+
+.delay-1 {
+  width: 95%;
+  animation: repas 3s forwards;
+  animation-delay: 0.1s;
+  opacity: 0;
+}
+
+.delay-2 {
+  width: 95%;
+  animation: repas 3s forwards;
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+
+.delay-3 {
+  width: 95%;
+  animation: repas 3s forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
+}
+
+.delay-4 {
+  width: 95%;
+  animation: repas 3s forwards;
+  animation-delay: 1.2s;
+  opacity: 0;
 }
 
 .ent {
@@ -221,7 +283,7 @@ a {
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: space-between;
+  justify-content: flex-end;
   height: 75px;
   border-radius: 20px;
   padding-left: 10px;
@@ -302,6 +364,7 @@ a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 100%;
 }
 
 .men p, h3 {
@@ -335,9 +398,13 @@ a {
 
 .aside1 {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-right: 20px;
+  /*display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 95%;
+  width: 95%;*/
 }
 
 .fonc {
@@ -402,23 +469,6 @@ a {
   color: #000;
 }
 
-.restaurants {
-  padding-bottom: 50px;
-}
-
-.nouveau {
-  position: absolute;
-  top: 10px;
-  right: 50px;
-  color: #10392f;
-  background-color: #99E2D0;
-  padding: 5px;
-}
-
-.bloc {
-  position: relative;
-}
-
 .fleche {
   margin-left: 20px;
 }
@@ -433,35 +483,32 @@ a {
   width: 150px;
 }
 
-.localisation {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding-right: 15px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #eaeaeaff;
-}
-
+/*.localisation
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #eaeaeaff;
+}*/
 .icone1 {
   margin-right: 15px;
 }
 
-.fleche {
-  margin-left: 20px;
-}
+/*.logo
+{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
-.logo {
-  display: flex;
-  justify-content: center;
-  width: 50%;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 150px;
-}
-
+    width: 150px; 
+}*/
 .localisation {
   display: flex;
   flex-direction: row;
@@ -474,10 +521,10 @@ a {
   box-shadow: inset 0px 8px 8px -3px #c6c6c6;
 }
 
-.icone1 {
-  margin-right: 15px;
-}
-
+/*.icone1
+{
+    margin-right: 15px;
+}*/
 .section1 {
   background-color: #f6f6f6ff;
   padding-bottom: 50px;
@@ -503,7 +550,8 @@ a {
 }
 
 .texteFin {
-  position: relative;
+  /*position: relative;*/
+  justify-content: center;
   /*bottom: 30px;*/
   padding-left: 20px;
   padding-top: 20px;
@@ -520,6 +568,7 @@ a {
 .iconeFoot {
   display: flex;
   flex-direction: row;
+  margin: auto;
   align-items: center;
   padding-left: 10px;
 }
@@ -529,7 +578,64 @@ a {
   display: flex;
   justify-content: space-evenly;
   width: 30%;
+  align-items: center;
+  margin: auto;
   color: #ffffff;
+}
+
+.fin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .Découvrir {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aside1 {
+    /*display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 20px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 95%;
+  }
+
+  .restaurant {
+    width: 100%;
+  }
+
+  .image1 {
+    width: 370px;
+  }
+
+  .texteFin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .fin {
+    /*display: flex;*/
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo1 {
+    /*align-items: flex-start;*/
+    margin-left: 0px;
+  }
+
+  .Repas {
+    /*display: flex;*/
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

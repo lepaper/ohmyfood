@@ -1,18 +1,51 @@
+.section2
+{
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+.section3
+{
+    background-color: #f6f6f6ff;
+    padding-top: 30px; 
+}
 .Resto h2
 {
     padding-left: 25px;
 }
+.restaurants
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    padding-bottom: 50px;
+}
 .restaurant
 {
-    width: 85%;
+    width: 100%;
     display:flex;
     flex-direction: column;
     margin: auto;
+    right: 450px;
     margin-bottom: 20px;
     border: 0 solid #ffffff;
     background-color: #ffffff;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0 5px 10px 3px  #deebff; 
+}
+.nouveau
+{
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    color: #10392f;
+    background-color: #99E2D0;
+    padding: 5px;
+}
+.bloc 
+{  
+    position: relative;
 }
 .restaurant1
 {
@@ -34,12 +67,14 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding-right: 10px;
 }
 .image1
 {
     border-radius: 15px 15px 0 0;
     padding-bottom: 10px;
-    height: 160px;
+    height: 200px;
+    width: 500px;
     object-fit: cover;
 }
 .image2
