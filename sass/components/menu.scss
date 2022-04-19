@@ -18,11 +18,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.repas
+/*.repas
 {
-    animation: repas 3s forwards;
-    /*opacity: 0;*/
-}
+    /*animation: repas 3s forwards;*/
+    /*opacity: 0;
+}*/
 @keyframes repas 
 {
     0%{
@@ -63,7 +63,7 @@
 .delay-1
 {
   width: 95%;
-  animation: repas 3s forwards;
+  animation: repas 2s forwards;
   animation-delay: 0.1s;
   opacity: 0;
   
@@ -71,22 +71,22 @@
 .delay-2
 {
   width: 95%;
-  animation: repas 3s forwards;
-  animation-delay: 0.4s;
+  animation: repas 2s forwards;
+  animation-delay: 0.5s;
   opacity: 0;
 }
 .delay-3
 {
   width: 95%;
-  animation: repas 3s forwards;
-  animation-delay: 0.8s;
+  animation: repas 2s forwards;
+  animation-delay: 1s;
   opacity: 0;
 }
 .delay-4
 {
   width: 95%;
-  animation: repas 3s forwards;
-  animation-delay: 1.2s;
+  animation: repas 2s forwards;
+  animation-delay: 1.5s;
   opacity: 0;
 }
 .ent
@@ -172,6 +172,8 @@
   color: white;
   text-align: center;
   margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .ent:hover .check i
 {
