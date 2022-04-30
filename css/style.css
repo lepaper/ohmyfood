@@ -197,7 +197,7 @@ a {
   display: flex;
   flex-direction: column;
   padding-bottom: 50px;
-  border: 1 solid black;
+  /*border: 1 solid black;*/
   border-radius: 30px 30px 0 0;
   background-color: #f6f6f6;
 }
@@ -321,14 +321,14 @@ a {
 .ent:hover .check {
   display: block;
   animation: slide 700ms ease-in-out forwards;
-  transform: scaleX(100%);
+  /*transform: scaleX(100%);*/
   transition: 800ms;
 }
 
 .ent .check {
   display: block;
   animation: slidereturn 700ms ease-in-out forwards;
-  transform: scaleX(100%);
+  /*transform: scaleX(100%);*/
   transition: 800ms;
 }
 
